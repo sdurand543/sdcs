@@ -1,1 +1,2 @@
-# BTrees (balanced trees)
+# BTrees \(balanced trees\)
+

@@ -1,0 +1,22 @@
+# Table of contents
+
+* [sdcs](README.md)
+* [doc](doc/README.md)
+  * [data\_structures](doc/data_structures/README.md)
+    * [BTrees \(balanced trees\)](doc/data_structures/btrees.md)
+    * [Trees](doc/data_structures/trees.md)
+    * [Lists](doc/data_structures/lists.md)
+    * [Hashing](doc/data_structures/hashing.md)
+    * [Disjoint Sets / Quick Union](doc/data_structures/disjoint_sets.md)
+    * [Sets](doc/data_structures/sets.md)
+    * [BSTs \(Binary Search Trees\)](doc/data_structures/bsts.md)
+    * [Multidimensional Trees](doc/data_structures/multidimensional_trees.md)
+    * [Counting Sorts](doc/data_structures/counting_sorts.md)
+    * [Asymptotics](doc/data_structures/asymptotics.md)
+    * [MSTs \(Minimum Spanning Trees\)](doc/data_structures/msts.md)
+    * [ADTs \(Abstract Data Types\)](doc/data_structures/adts.md)
+    * [Comparison Sorts](doc/data_structures/comparison_sorts.md)
+    * [Maps](doc/data_structures/maps.md)
+    * [Tree and Graph Traversals](doc/data_structures/traversals.md)
+  * [Version Control](doc/version_control.md)
+

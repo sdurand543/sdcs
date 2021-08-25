@@ -1,1 +1,2 @@
-# ADTs (Abstract Data Types)
+# ADTs \(Abstract Data Types\)
+

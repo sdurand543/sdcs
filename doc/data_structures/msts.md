@@ -1,1 +1,2 @@
-# MSTs (Minimum Spanning Trees)
+# MSTs \(Minimum Spanning Trees\)
+
