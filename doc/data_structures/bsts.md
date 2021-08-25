@@ -1,2 +1,1 @@
-# BSTs \(Binary Search Trees\)
-
+# BSTs (Binary Search Trees)

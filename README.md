@@ -1,7 +1,3 @@
----
-description: About Page
----
-
 # sdcs
 
 ## Aim
