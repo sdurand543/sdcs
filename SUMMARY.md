@@ -18,25 +18,45 @@
 
 ## CS
 
-* [61A Programming](cs/61a-programming.md)
-* [61B Data Structures](cs/data_structures/README.md)
-  * [Lists](cs/data_structures/lists.md)
-  * [BTrees \(Balanced Trees\)](cs/data_structures/btrees.md)
-  * [Trees](cs/data_structures/trees.md)
-  * [Hashing](cs/data_structures/hashing.md)
-  * [Disjoint Sets / Quick Union](cs/data_structures/disjoint_sets.md)
-  * [Sets](cs/data_structures/sets.md)
-  * [BSTs \(Binary Search Trees\)](cs/data_structures/bsts.md)
-  * [Multidimensional Trees](cs/data_structures/multidimensional_trees.md)
-  * [Counting Sorts](cs/data_structures/counting_sorts.md)
-  * [Asymptotics](cs/data_structures/asymptotics.md)
-  * [MSTs \(Minimum Spanning Trees\)](cs/data_structures/msts.md)
-  * [ADTs \(Abstract Data Types\)](cs/data_structures/adts.md)
-  * [Comparison Sorts](cs/data_structures/comparison_sorts.md)
-  * [Maps](cs/data_structures/maps.md)
-  * [Tree and Graph Traversals](cs/data_structures/traversals.md)
+* [61C Computer Architecture](cs/computer-architecture.md)
+* [61A Programming](cs/programming/README.md)
+  * [Programming Language](cs/programming/programming-language.md)
+  * [Functions](cs/programming/functions.md)
+  * [Control Structures](cs/programming/control-structures.md)
+  * [Higher Order Functions](cs/programming/higher-order-functions.md)
+  * [Environments](cs/programming/environments.md)
+  * [Recursion](cs/programming/recursion.md)
+  * [Trees](cs/programming/trees.md)
+  * [Iteration](cs/programming/iteration.md)
+  * [OOP](cs/programming/oop.md)
+  * [Generics](cs/programming/generics.md)
+  * [Interpreters](cs/programming/interpreters.md)
+* [61B Data Structures](cs/data-structures/README.md)
+  * [Lists](cs/data-structures/lists.md)
+  * [BTrees \(Balanced Trees\)](cs/data-structures/btrees.md)
+  * [Trees](cs/data-structures/trees.md)
+  * [Hashing](cs/data-structures/hashing.md)
+  * [Disjoint Sets](cs/data-structures/disjoint_sets.md)
+  * [Sets](cs/data-structures/sets.md)
+  * [BSTs \(Binary Search Trees\)](cs/data-structures/bsts.md)
+  * [Multidimensional Trees](cs/data-structures/multidimensional_trees.md)
+  * [Counting Sorts](cs/data-structures/counting_sorts.md)
+  * [Complexity Analysis](cs/data-structures/complexity-analysis.md)
+  * [MSTs \(Minimum Spanning Trees\)](cs/data-structures/msts.md)
+  * [ADTs \(Abstract Data Types\)](cs/data-structures/adts.md)
+  * [Comparison Sorts](cs/data-structures/comparison_sorts.md)
+  * [Maps](cs/data-structures/maps.md)
+  * [Tree and Graph Traversals](cs/data-structures/traversals.md)
 
 ## EE
 
 * [Untitled](ee/untitled.md)
+
+## EECS
+
+* [Untitled](eecs/untitled.md)
+
+---
+
+* [Untitled](untitled.md)
 

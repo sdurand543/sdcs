@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-{% page-ref page="../tools/basic-tools/" %}
+{% page-ref page="../../tools/basic-tools/" %}
 
 ## About
 

@@ -1,2 +1,0 @@
-# Disjoint Sets / Quick Union
-

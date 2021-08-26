@@ -2,7 +2,7 @@
 
 ## Intro
 
-A shell is an interpreter / purely text-based user interface for managing your computer.
+A shell is an interpreter / purely text-based interface for managing your computer.
 
 There are several different kinds of shells, but the most ubiquitous is Bash. In this series, we will use Bash \(or something similar\) to interface with our machine.
 
@@ -14,9 +14,17 @@ There are several different kinds of shells, but the most ubiquitous is Bash. In
 The above instruction is very system-specific and subject to change. As an EECS learner, it is important to feel comfortable using the web to fill in gaps in your understanding. I suggest entering "how to open a Bash shell in &lt;my\_os&gt;" into your favorite search engine. \("os" is short for operating system. Examples of these include MacOS, Windows, and Linux distributions such as Ubuntu.\)
 {% endhint %}
 
+## Syntax
+
+The basic syntax of a bash command is as follows:
+
+```text
+$ <command> <arguments>
+```
+
 ## Conventions
 
-When discussing shell code, there are general conventions people use to avoid confusion. One of them, which you will probably dislike, \(because it makes copy-pasting code from the internet a pain\), is to prefix all shell commands with a `$`symbol, and all additional lines of input with a `>` symbol. This is useful because it helps delineate the difference between typed lines of input and expected output. In the example below, only the first line is a shell command. The second is the expected output.
+When discussing shell code, there are general conventions people use to avoid confusion. One of them is to prefix all shell commands with a `$`symbol, and all additional lines of input with a `>` symbol. This is useful because it helps delineate the difference between typed lines of input and expected output. In the example below, only the first line is a shell command. The second is the expected output.
 
 ```text
 $ echo "When copying this command to your computer, remove the $."
@@ -29,14 +37,14 @@ Later we will discuss the usefulness of `$` and `>` within shell commands. Do no
 
 There are several different conventions for denoting a location where the user must enter information pertaining to their own environment or use-case. I will use `<description>` to denote a field that needs to be entered by the user. 
 
-For instance, the `echo` command can be used to 'echo' input text to standard output. By default, standard output is displayed to the console user. Using quotes is optional \(though I prefer to use them, because it is more explicit about the bounds of the text\).
+For instance, the `echo` command can be used to 'echo' input text to standard output. By default, standard output is displayed to the console user. Using quotes is optional \(though I prefer to use them, because it is more explicit\).
 
 ```text
 $ echo <text>
-<text>
+text
 
 $ echo "<text>"
-<text>
+text
 ```
 
 ## Shell Environment
@@ -51,7 +59,7 @@ For instance, your HOME environment variable points to your home directory. This
 $ echo HOME
 ```
 
-Well that wasn't too useful. Lets indicate to our shell that we want to treat HOME as a variable and replace it with its value by using a `$` symbol.
+Well that wasn't too useful. Lets indicate to our shell that we want to display the value of the HOME variable by preceding it with a `$` symbol.
 
 ```text
 $ echo $HOME
@@ -74,4 +82,14 @@ Go ahead and retry the `ls` command again. You will see that the state has chang
 ```text
 $ ls ~
 ```
+
+{% hint style="info" %}
+If you are wondering, you should check the output of the following to improve your understanding of Bash.
+
+```text
+$ echo $ HOME
+```
+
+Then question why this is the behavior. Conclude in your mind what the behavior is and test it in several different cases.
+{% endhint %}
 
