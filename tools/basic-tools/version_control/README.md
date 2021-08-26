@@ -1,19 +1,19 @@
-# version\_control
+# Version Control
 
 ## Intro
 
-Version control is a critical part of most software development.
+Version control software allows users to track, recover, and merge different versions of their files. You can think of it like bookkeeping and project organization for software engineers.
 
-It allows multiple people to collaborate on massive projects and to recover old work if they need to restore or reference it. The most ubiquitous version control software is git, and we will use it for the remainder of this series.
+There are several different kinds of version control software, but the most ubiquitous is git. In this series, we will use git to manage different versions of our projects.
 
-## Git Design
+## Abridged Design
 
 In my opinion, the two major uses of version control software are:
 
 1. To recover old versions of the project \(or parts of the project\)
 2. To collaborate by working on different versions / branches of the project that will eventually get merged together.
 
-These two use cases directly parallel two of git's exposed structures.
+These two use cases directly correlate to two of git's exposed structures.
 
 1. Commits
    * A commit is a snapshot of the current state of your project.

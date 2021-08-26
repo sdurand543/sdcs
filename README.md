@@ -8,5 +8,7 @@ SDCS is a series focused on exploring EECS \(Electrical Engineering and Computer
 
 SDCS is developed by Scott Durand \(sdurand543@gmail.com\)
 
+{% hint style="info" %}
 If you have any questions or concerns about the material presented, feel free to email me so that this series can improve.
+{% endhint %}
 
