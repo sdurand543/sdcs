@@ -1,14 +1,12 @@
 # sdcs
 
-## Aim
+## Purpose
 
-sdcs is a series of tutorials aimed at exploring primitive computer science concepts and principals
-
-## Structure
-
-sdcs is structured to mirror the CS program at UC Berkeley, with a particular emphasis on its lower division CS courses
+SDCS is a series focused on exploring EECS \(Electrical Engineering and Computer Science\) concepts. It is modeled primarily after the courses in the EECS major at UC Berkeley.
 
 ## About
 
-sdcs is developed by Scott Durand \(sdurand543@gmail.com\)
+SDCS is developed by Scott Durand \(sdurand543@gmail.com\)
+
+If you have any questions or concerns about the material presented, feel free to email me so that this series can improve.
 
