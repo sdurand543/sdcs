@@ -19,8 +19,10 @@ The above instruction is very system-specific and subject to change. As an EECS 
 The basic syntax of a bash command is as follows:
 
 ```text
-$ <command> <arguments>
+$ <command_name> <arguments>
 ```
+
+Don't worry if the term 'arguments' doesn't make sense yet. We will go over them in more detail in the upcoming programming series.
 
 ## Conventions
 
