@@ -2,11 +2,11 @@
 
 ## Prerequisites
 
-{% page-ref page="../../tools/basic-tools/" %}
+{% page-ref page="../programming/" %}
 
 ## About
 
-In this section we will learn the APIs and implementations of some commonly used data structures and algorithms related to them.
+In this section we will learn the APIs and implementations of some commonly used data structures and algorithms related to them, primarily using the Java programming language.
 
 ## Related Documentation
 

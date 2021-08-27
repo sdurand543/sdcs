@@ -6,7 +6,7 @@
 
 ## About
 
-In this section we will learn the APIs and implementations of some commonly used data structures and algorithms related to them.
+In this section we will learn different programming methodologies and common coding ideas that carry into most programming languages, primarily using the Python programming language.
 
 ## Related Documentation
 

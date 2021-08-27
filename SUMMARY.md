@@ -53,16 +53,20 @@
     * [Comparison Sorts](cs/data-structures/sorting/comparison_sorts.md)
     * [Counting Sorts](cs/data-structures/sorting/counting_sorts.md)
 * [61C Computer Architecture](cs/computer-architecture.md)
+* [169A Software Engineering](cs/software-engineering/README.md)
+  * [Software Development Process](cs/software-engineering/software-development-process.md)
 
 ## EE
 
-* [Untitled](ee/untitled.md)
+* [16A Devices and Systems I](ee/devices-and-systems-i/README.md)
+  * [Linear Algebra](ee/devices-and-systems-i/linear-algebra/README.md)
+    * [Vectors](ee/devices-and-systems-i/linear-algebra/vectors.md)
+    * [Matrices](ee/devices-and-systems-i/linear-algebra/matrices.md)
+    * [Eigenstuff](ee/devices-and-systems-i/linear-algebra/eigenstuff.md)
+  * [Circuits](ee/devices-and-systems-i/circuits.md)
+  * [Control](ee/devices-and-systems-i/control.md)
 
 ## EECS
 
 * [Untitled](eecs/untitled.md)
-
----
-
-* [Untitled](untitled.md)
 
