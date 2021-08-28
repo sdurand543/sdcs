@@ -12,5 +12,5 @@ Below is a non-exhaustive list of Bash commands.
 $ <program_name> <arguments>
 ```
 
-~~TODO~~
+Under Development
 

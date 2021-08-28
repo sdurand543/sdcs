@@ -45,7 +45,9 @@ Informally, the norm of a vector is its magnitude.
 
 There are many different norms that all quantify magnitude in slightly different ways.
 
-You are probably most familiar with the 2-norm / euclidian norm, which corresponds to distance as we know it in the physical world \($$\mathbb{R^3}$$\). The norm is defined below.
+#### Euclidian Norm \(2-Norm\)
+
+You are probably most familiar with the euclidian norm / 2-norm, which corresponds to distance as we know it in the physical world \($$\mathbb{R^3}$$\). The norm is defined below.
 
 $$
 \lVert \vec{u} \rVert _{2}
@@ -68,6 +70,10 @@ def euclidian_norm_alt(v):
     return math.sqrt(sum([v_i * v_i for v_i in v]))
 ```
 
+Note: If someone refers to the contextless 'norm' of a vector, they are probably referring to the euclidian norm.
+
+#### P-Norm
+
 The general p-norm is defined below.
 
 $$
@@ -80,19 +86,17 @@ Different norms are useful for measuring different kinds of magnitudes you may b
 
 For example, the 1-norm, sometimes known as the Manhattan norm \(defined as $$ \lVert \vec{u} \rVert _{1} = \sum_{i = 1}^{n}{\lVert \vec{u}_{i} \rVert}$$\), might be useful for calculating the total driving distance between two locations in a dense grid-like city \(provided that your vector space is aligned with the street axes\).
 
-Note: If someone refers to the contextless 'norm' of a vector, they are probably referring to the euclidian norm.
-
 {% hint style="info" %}
 Norms can be very useful for calculating error. To use a norm in this way, you will typically want to formulate a vector that describes how different your state vector $$\vec{v}$$ is from the desired 'target' state vector $$\vec{u}$$. You can calculate this using the expression $$\vec{u} - \vec{v}$$, and then apply the most relevant norm to calculate the error.
 {% endhint %}
 
 ### Normalization
 
-Vectors that have unit norm \($$\lVert \vec{u} \rVert _p = 1$$\) are called **unit vectors**.
+Vectors that have unit norm \($$\lVert \vec{u} \rVert _p = 1$$\) are called unit vectors.
 
-Performing normalization on a specific norm results in a unit vector for that norm.
+Performing normalization on a vector using a specific norm results in a unit vector for that norm.
 
-Below is an equation showing $$\vec{u}$$ the euclidian normalized version of $$\vec{v}$$.
+Below is an equation for the vector $$\vec{u}$$, the euclidian normalized $$\vec{v}$$.
 
 $$
 \vec{u} = \frac{\vec{v}}{\lVert \vec{v} \rVert}
@@ -111,6 +115,8 @@ def normalized(v):
         return v
     return v / norm
 ```
+
+
 
 ## Addition
 
@@ -186,12 +192,6 @@ Informally, the inner product of two vectors is a combined measure of their magn
 
 Inner products are denoted using the following notation, $$\langle \vec{u}, \vec{v} \rangle$$.
 
-In the remainder of the Devices and Systems sections, I will use inner product and dot product notation interchangeably.
-
-{% hint style="success" %}
-A complete understanding of non-euclidian inner products is not necessary for the Devices and Systems I series. 
-{% endhint %}
-
 > Somewhat formally, an inner product is a function $$ V \times V \rightarrow \mathbb{F}$$ \(where $$\mathbb{F}$$is either $$\mathbb{R}$$ or $$\mathbb{C}$$\) that satisfies the following properties:
 >
 > 1. Linearity in the first argument:
@@ -203,6 +203,8 @@ A complete understanding of non-euclidian inner products is not necessary for th
 >    * Meaning that all self-inner products are positive, except those on $$\vec{0}$$, which are 0.
 
 > @source [Wikipedia](https://en.wikipedia.org/wiki/Inner_product_space)
+
+In the remainder of the Devices and Systems I section I will use the term inner product and dot product interchangeably.
 
 ### Euclidian Inner Product / Dot Product / Scalar Product
 
@@ -292,7 +294,7 @@ def cross_alt(u, v):
 Disclaimer: The following cross product derivation depends on some material about [vector spaces](vector-space.md).
 {% endhint %}
 
-You can derive an expression for the cross product of two vectors $$\vec{u}$$ and $$\vec{v}$$ in $$\mathbb{R^3}$$ just by using the orthonormal basis \(explained in next pages\) in $$\mathbb{R^3}$$ \($$\vec{i} \ \vec{j} \ \vec{k}$$\) and the distributive property.
+You can derive an expression for the cross product of two vectors $$\vec{u}$$ and $$\vec{v}$$ in $$\mathbb{R^3}$$ just by using the [orthonormal basis](vector-space.md#orthonormal-basis) \(forward link\) in $$\mathbb{R^3}$$ \($$\vec{i} \ \vec{j} \ \vec{k}$$\) and the distributive property.
 
 $$
 \vec{u} = \vec{u}_{1} * \vec{i} + \vec{u}_{2} * \vec{j} + \vec{u}_{3} * \vec{k}

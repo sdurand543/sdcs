@@ -29,7 +29,7 @@ As a bit of a teaser, $$\mathbb{R^3}$$ is the [vector space](vector-space.md) \(
 
 > Summary: Coordinate spaces are the link between your mathematical representation and the world space you are representing. In some ways, you can consider them as definitional and descriptive \(even when they seem intangible\), adding specific meaning to your vector and matrix data.
 
-## Orientation
+## Vector Orientation
 
 Once we get into matrices, it will be very important to distinguish between the two possible orientations of vectors \(because they will be treated like a matrix with width 1\). 
 

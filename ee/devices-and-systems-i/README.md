@@ -6,7 +6,7 @@
 
 ## About
 
-In this section we will learn linear algebra and its relationship to circuit design and control, primarily using the Python programming language.
+In this section we will learn linear algebra and its relationship to circuit design, primarily using the Python programming language.
 
 ## Reference Documentation
 

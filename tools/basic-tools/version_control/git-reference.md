@@ -6,5 +6,5 @@ Below is a non-exhaustive list of git commands.
 
 ## Reference
 
-~~TODO~~
+Under Development
 

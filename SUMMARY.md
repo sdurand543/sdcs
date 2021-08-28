@@ -62,8 +62,9 @@
   * [Linear Algebra](ee/devices-and-systems-i/linear-algebra/README.md)
     * [Vectors](ee/devices-and-systems-i/linear-algebra/vectors/README.md)
       * [Vector Operations](ee/devices-and-systems-i/linear-algebra/vectors/vector-operations.md)
+      * [Linear Dependence](ee/devices-and-systems-i/linear-algebra/vectors/linear-dependence.md)
       * [Vector Space](ee/devices-and-systems-i/linear-algebra/vectors/vector-space.md)
-      * [Vector Projection](ee/devices-and-systems-i/linear-algebra/vectors/vector-projection.md)
+      * [Projection](ee/devices-and-systems-i/linear-algebra/vectors/projection.md)
     * [Matrices](ee/devices-and-systems-i/linear-algebra/matrices.md)
     * [Eigenstuff](ee/devices-and-systems-i/linear-algebra/eigenstuff.md)
   * [Circuits](ee/devices-and-systems-i/circuits.md)
@@ -71,5 +72,5 @@
 
 ## EECS
 
-* [Untitled](eecs/untitled.md)
+* [106A Intro to Robotics](eecs/untitled.md)
 
