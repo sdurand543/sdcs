@@ -6,7 +6,7 @@ A vector is a list of scalar values.
 
 Here is an example of a vector$$\vec{u} = \begin{bmatrix} 2 \ 3 \ 4 \end{bmatrix}$$.
 
-It is very common for vectors and matrices to be described using indices that start from one. For instance, $$\vec{u}_1$$ would give us the value 2, the first value in our vector. In a language like Python, we could use `u[1]` to get the same value.
+It is very common for vectors and matrices to be described using indices that start from one. For instance, $$\vec{u}_1$$ would give us the value 2, the first value in our vector. In a language that starts with the zero-index \(like Python\), we could use `u[0]` to get the same value.
 
 ## Coordinate Space
 
@@ -25,7 +25,7 @@ As an EECS designer, it is important to have a complete understanding of the coo
 
 **Revised Statement:** The coordinate space of $$\vec{u}$$ is in $$\mathbb{R^3}$$ defined by the $$ x \ y \ z $$ unit vector describing my line of sight \(a specific vector in $$\mathbb{R^3}$$\), measured in meters.
 
-As a bit of extra clarification, $$\mathbb{R^3}$$ is the **vector space** of our model.
+As a bit of a teaser, $$\mathbb{R^3}$$ is the [vector space](vector-space.md) \(forward link\) of our model.
 
 > Summary: Coordinate spaces are the link between your mathematical representation and the world space you are representing. In some ways, you can consider them as definitional and descriptive \(even when they seem intangible\), adding specific meaning to your vector and matrix data.
 
@@ -40,18 +40,16 @@ Since all vectors and matrices contain logical state for their coordinate space,
 {% tabs %}
 {% tab title="Vector" %}
 $$
-u = \begin{bmatrix} 1 \  2 \  3 \end{bmatrix}
+\vec{u} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
 $$
 {% endtab %}
 
 {% tab title="LaTeX" %}
-```text
-u = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
-```
+\vec{u} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
 {% endtab %}
 
-{% tab title="numpy " %}
-```text
+{% tab title="numpy" %}
+```python
 u = np.array([1, 2, 3])
 ```
 {% endtab %}
@@ -62,18 +60,16 @@ u = np.array([1, 2, 3])
 {% tabs %}
 {% tab title="Vector" %}
 $$
-v = \begin{bmatrix} 1 \\  2 \\ 3 \end{bmatrix}
+\vec{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
 $$
 {% endtab %}
 
 {% tab title="LaTeX" %}
-```text
-v = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
-```
+\vec{v} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
 {% endtab %}
 
 {% tab title="numpy" %}
-```
+```python
 v = np.array([[1], [2], [3]])
 ```
 {% endtab %}

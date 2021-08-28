@@ -11,15 +11,15 @@ $$
 * Vector --&gt; a one-dimensional list of scalars
 
 $$
-v_{1} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
-v_{2} = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}
-v_{3} = \begin{bmatrix} 7 \\ 8 \\ 9 \end{bmatrix}
+\vec{v}_{1} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+\vec{v}_{2} = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}
+\vec{v}_{3} = \begin{bmatrix} 7 \\ 8 \\ 9 \end{bmatrix}
 $$
 
 * Matrix --&gt; a one-dimensional list of equal-length vectors \(2D grid of scalars\)
 
 $$
-m = 
+M = 
 \begin{bmatrix} 
 1 \ 4 \ 7 \\
 2 \ 5 \ 8 \\

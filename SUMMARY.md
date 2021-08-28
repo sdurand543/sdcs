@@ -62,6 +62,8 @@
   * [Linear Algebra](ee/devices-and-systems-i/linear-algebra/README.md)
     * [Vectors](ee/devices-and-systems-i/linear-algebra/vectors/README.md)
       * [Vector Operations](ee/devices-and-systems-i/linear-algebra/vectors/vector-operations.md)
+      * [Vector Space](ee/devices-and-systems-i/linear-algebra/vectors/vector-space.md)
+      * [Vector Projection](ee/devices-and-systems-i/linear-algebra/vectors/vector-projection.md)
     * [Matrices](ee/devices-and-systems-i/linear-algebra/matrices.md)
     * [Eigenstuff](ee/devices-and-systems-i/linear-algebra/eigenstuff.md)
   * [Circuits](ee/devices-and-systems-i/circuits.md)

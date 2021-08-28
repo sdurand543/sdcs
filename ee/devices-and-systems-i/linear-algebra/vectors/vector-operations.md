@@ -32,17 +32,15 @@ def scale_alt(s, v):
 
 Informally, the norm of a vector is its magnitude.
 
-> Somewhat formally, a norm is a function $$ p : X \rightarrow \mathbb{R}$$ on a vector in a vector space $$X$$ over a subfield of $$\mathbb{C^n}$$ \(vectors of complex numbers\) that satisfies the following properties:
+> Somewhat formally, a norm is a function $$ p : X \rightarrow \mathbb{R}$$ on a vector in a vector space $$X$$ over a subfield of $$\mathbb{C^n}$$ \(vectors of $$n$$ complex numbers\) that satisfies the following properties:
 >
 > 1. Subadditivity / Triangle Inequality: $$ p(\vec{a} + \vec{b}) \leq p(\vec{a}) + p(\vec{b})$$
 >    * Meaning that the norm of a sum of vectors is at most the sum of their norms.
-> 2. Absolute Homogeneity: $$p(s \vec{x}) = |s| p(\vec{x})$$
+> 2. Homogeneity: $$p(s \vec{x}) = |s| p(\vec{x})$$
 >    * Meaning that scalars applied on a vector scale the norm the same amount.
-> 3. Positive Definiteness: $$ p(\vec{x}) = 0$$ iff $$\vec{x} = \vec{0}$$
->    * Meaning that the only input to a norm that maps to 0 is $$\vec{0}$$ itself.
-> 4. Non-negative: $$p(\vec{x}) \geq 0$$
->    * Meaning that all norms are non-negative. This property is implied by 1 and 2.
->
+> 3. Positive Definiteness: $$p(\vec{x}) \geq 0$$ and $$ p(\vec{x}) = 0$$ iff $$\vec{x} = \vec{0}$$
+>    * Meaning that all norms are positive, except those on $$\vec{0}$$, which are 0.
+
 > @source [Wikipedia](https://en.wikipedia.org/wiki/Norm_%28mathematics%29)
 
 There are many different norms that all quantify magnitude in slightly different ways.
@@ -82,7 +80,7 @@ Different norms are useful for measuring different kinds of magnitudes you may b
 
 For example, the 1-norm, sometimes known as the Manhattan norm \(defined as $$ \lVert \vec{u} \rVert _{1} = \sum_{i = 1}^{n}{\lVert \vec{u}_{i} \rVert}$$\), might be useful for calculating the total driving distance between two locations in a dense grid-like city \(provided that your vector space is aligned with the street axes\).
 
-Closing Note: If someone refers to the generic norm of a vector, they are probably referring to the euclidian norm.
+Note: If someone refers to the contextless 'norm' of a vector, they are probably referring to the euclidian norm.
 
 {% hint style="info" %}
 Norms can be very useful for calculating error. To use a norm in this way, you will typically want to formulate a vector that describes how different your state vector $$\vec{v}$$ is from the desired 'target' state vector $$\vec{u}$$. You can calculate this using the expression $$\vec{u} - \vec{v}$$, and then apply the most relevant norm to calculate the error.
@@ -140,11 +138,10 @@ def add(u, v):
 # w/out builtin (for demonstration purposes)
 def add_alt(u, v):
     if u.shape != v.shape:
-        return None
+        raise ValueError("vectors are not the same length")
     sum = np.array(u)
     for i in range(len(v)):
-        v_i = v[i]
-        sum[i] += v_i
+        sum[i] += v[i]
     return sum
 ```
 
@@ -152,25 +149,98 @@ def add_alt(u, v):
 
 Vector-vector multiplication comes in several different flavors.
 
+### Hadamard Product
+
+The Hadamard product is the element-wise product of two vectors.
+
+$$
+\begin{bmatrix}  2 \\ 3 \\ 4 \end{bmatrix}
+\circ
+\begin{bmatrix} 7 \\ 4 \\ 10 \end{bmatrix}
+=
+\begin{bmatrix} 14 \\ 12 \\ 40 \end{bmatrix}
+$$
+
+```python
+#!/usr/bin/python
+
+import numpy as np
+
+# w/ builtin
+def hadamard_product(u, v):
+    return u * v
+
+# w/out builtin (for demonstration purposes)
+def hadamard_product_alt(u, v):
+    if u.shape != v.shape:
+        raise ValueError("vectors are not the same length")
+    h_product = np.array(u)
+    for i in range(len(v)):
+        h_product[i] *= v[i]
+    return h_product
+```
+
 ### Inner Product
 
-The inner product of two vector
+Informally, the inner product of two vectors is a combined measure of their magnitudes and similarity.
+
+Inner products are denoted using the following notation, $$\langle \vec{u}, \vec{v} \rangle$$.
+
+In the remainder of the Devices and Systems sections, I will use inner product and dot product notation interchangeably.
 
 {% hint style="success" %}
-A complete understanding of inner products is not necessary for the Devices and Systems I series. 
+A complete understanding of non-euclidian inner products is not necessary for the Devices and Systems I series. 
 {% endhint %}
+
+> Somewhat formally, an inner product is a function $$ V \times V \rightarrow \mathbb{F}$$ \(where $$\mathbb{F}$$is either $$\mathbb{R}$$ or $$\mathbb{C}$$\) that satisfies the following properties:
+>
+> 1. Linearity in the first argument:
+>    1.  $$ \langle s\vec{a}, \vec{b} \rangle  = s \langle \vec{a}, \vec{b} \rangle$$
+>    2. $$\langle \vec{a} + \vec{c}, \vec{b} \rangle = \langle \vec{a}, \vec{b} \rangle + \langle \vec{c}, \vec{b} \rangle$$
+> 2. Conjugate Symmetry: $$\langle \vec{a}, \vec{b} \rangle =  \overline{\langle \vec{b}, \vec{a} \rangle}$$
+>    * For real number vectors, this means that $$ \langle \vec{a}, \vec{b} \rangle = \langle \vec{b}, \vec{a} \rangle$$
+> 3. Positive Definiteness: $$\langle \vec{a}, \vec{a} \rangle \geq 0$$ and $$ \langle \vec{a}, \vec{a} \rangle = 0$$ iff $$\vec{a} = \vec{0}$$
+>    * Meaning that all self-inner products are positive, except those on $$\vec{0}$$, which are 0.
+
+> @source [Wikipedia](https://en.wikipedia.org/wiki/Inner_product_space)
 
 ### Euclidian Inner Product / Dot Product / Scalar Product
 
 The euclidian inner product is a specific kind of inner product defined for vectors in $$\mathbb{R^n}$$. It is the sum of their element-wise products of the two vectors, resulting in a scalar.
 
 $$
-\vec{u} * \vec{v}
+\vec{u} \cdot \vec{v}
 =
 \sum_{i=1}^{n}{\vec{u}_{i} * \vec{v}_{i}}
 $$
 
-Dot products are useful for determining how similar two vectors / data points are \(more on this later\).
+As stated in the inner product section, the dot product is a useful measure of the similarity of two vectors.
+
+$$
+\begin{bmatrix}  2 \\ 3 \\ 4 \end{bmatrix}
+\cdot
+\begin{bmatrix} 7 \\ 4 \\ 10 \end{bmatrix}
+= 14 + 12 + 40 = 66
+$$
+
+```python
+#!/usr/bin/python
+
+import numpy as np
+
+# w/ builtin
+def dot(u, v):
+    return np.dot(u, v)
+    
+# w/out builtin (for demonstration purposes)
+def dot_alt(u, v):
+    if u.shape != v.shape:
+        raise ValueError("vectors are not the same length")
+    dot_product = 0
+    for i in range(len(u)):
+        dot_product += u[i] * v[i]
+    return dot_product
+```
 
 ### Cross Product
 
@@ -180,11 +250,49 @@ Below is a diagram of a very simple cross product.
 
 ![](../../../../.gitbook/assets/image.png)
 
-{% hint style="info" %}
+
+
+The cross product is given as the following:
+
+$$
+\vec{u} \times \vec{v}
+=
+\begin{bmatrix} 
+\vec{u}_{2} \vec{v}_{3} - \vec{u}_{3} \vec{v}_{2}  \\
+\vec{u}_{3} \vec{v}_{1} - \vec{u}_{1} \vec{v}_{3} \\ 
+\vec{u}_{1} \vec{v}_{2} - \vec{u}_{2} \vec{v}_{1}
+\end{bmatrix}
+$$
+
 Cross products are only nonzero in $$\mathbb{R^3}$$ and $$\mathbb{R^7}$$, so we will only discuss the $$\mathbb{R^3}$$ cross product.
+
+```python
+#!/usr/bin/python                                                               
+
+import numpy as np
+
+# w/ builtin                                                                    
+def cross(u, v):
+    return np.cross(u, v)
+
+# w/out builtin (for demonstration purposes)                                    
+def cross_alt(u, v):
+    if u.shape != v.shape != (3):
+        raise ValueError("vectors are not of length 3")
+    return np.array([
+                    u[1] * v[2] - u[2] * v[1],
+                    u[2] * v[0] - u[0] * v[2],
+                    u[0] * v[1] - u[1] * v[0]
+                    ])
+```
+
+#### Cross Product Derivation
+
+{% hint style="warning" %}
+Disclaimer: The following cross product derivation depends on some material about [vector spaces](vector-space.md).
 {% endhint %}
 
-You can derive an expression for the cross product of two vectors $$\vec{u}$$ and $$\vec{v}$$ in $$\mathbb{R^3}$$ just by using the orthonormal basis in $$\mathbb{R^3}$$ \($$\vec{i} \ \vec{j} \ \vec{k}$$\) and the distributive property.
+You can derive an expression for the cross product of two vectors $$\vec{u}$$ and $$\vec{v}$$ in $$\mathbb{R^3}$$ just by using the orthonormal basis \(explained in next pages\) in $$\mathbb{R^3}$$ \($$\vec{i} \ \vec{j} \ \vec{k}$$\) and the distributive property.
 
 $$
 \vec{u} = \vec{u}_{1} * \vec{i} + \vec{u}_{2} * \vec{j} + \vec{u}_{3} * \vec{k}
@@ -226,6 +334,16 @@ $$
 (\vec{u}_{3} \vec{v}_{1} - \vec{u}_{1} \vec{v}_{3}) * \vec{j}
 + 
 (\vec{u}_{1} \vec{v}_{2} - \vec{u}_{2} \vec{v}_{1}) * \vec{k}
+$$
+
+$$
+\vec{u} \times \vec{v}
+=
+\begin{bmatrix} 
+\vec{u}_{2} \vec{v}_{3} - \vec{u}_{3} \vec{v}_{2}  \\
+\vec{u}_{3} \vec{v}_{1} - \vec{u}_{1} \vec{v}_{3} \\ 
+\vec{u}_{1} \vec{v}_{2} - \vec{u}_{2} \vec{v}_{1}
+\end{bmatrix}
 $$
 
 {% hint style="info" %}
