@@ -60,7 +60,8 @@
 
 * [16A Devices and Systems I](ee/devices-and-systems-i/README.md)
   * [Linear Algebra](ee/devices-and-systems-i/linear-algebra/README.md)
-    * [Vectors](ee/devices-and-systems-i/linear-algebra/vectors.md)
+    * [Vectors](ee/devices-and-systems-i/linear-algebra/vectors/README.md)
+      * [Vector Operations](ee/devices-and-systems-i/linear-algebra/vectors/vector-operations.md)
     * [Matrices](ee/devices-and-systems-i/linear-algebra/matrices.md)
     * [Eigenstuff](ee/devices-and-systems-i/linear-algebra/eigenstuff.md)
   * [Circuits](ee/devices-and-systems-i/circuits.md)

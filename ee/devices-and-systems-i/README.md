@@ -14,7 +14,3 @@ In this section we will learn linear algebra and its relationship to circuit des
 
 {% embed url="https://www.latex-project.org/help/documentation/" caption="Official Reference Material for LaTeX" %}
 
-
-
-
-
