@@ -45,6 +45,12 @@ Informally, the norm of a vector is its magnitude.
 
 There are many different norms that all quantify magnitude in slightly different ways.
 
+One such norm is defined by the [inner product](vector-operations.md#inner-product) \(forward link\).
+
+$$
+\lVert \vec{u} \rVert ^{2} = \langle \vec{u}, \vec{u} \rangle
+$$
+
 #### Euclidian Norm \(2-Norm\)
 
 You are probably most familiar with the euclidian norm / 2-norm, which corresponds to distance as we know it in the physical world \($$\mathbb{R^3}$$\). The norm is defined below.
@@ -216,15 +222,6 @@ $$
 \sum_{i=1}^{n}{\vec{u}_{i} * \vec{v}_{i}}
 $$
 
-As stated in the inner product section, the dot product is a useful measure of the similarity of two vectors.
-
-$$
-\begin{bmatrix}  2 \\ 3 \\ 4 \end{bmatrix}
-\cdot
-\begin{bmatrix} 7 \\ 4 \\ 10 \end{bmatrix}
-= 14 + 12 + 40 = 66
-$$
-
 ```python
 #!/usr/bin/python
 
@@ -243,6 +240,32 @@ def dot_alt(u, v):
         dot_product += u[i] * v[i]
     return dot_product
 ```
+
+As stated in the inner product section, the dot product is a useful measure of the similarity  / alignment of two vectors.
+
+$$
+\begin{bmatrix}  2 \\ 3 \\ 4 \end{bmatrix}
+\cdot
+\begin{bmatrix} 7 \\ 4 \\ 10 \end{bmatrix}
+= 14 + 12 + 40 = 66
+$$
+
+Interpreting column vectors as single-column matrices, you can represent the dot product as matrix multiplication \(forward link: Under Development\).
+
+$$
+\vec{u} \cdot \vec{v} = \vec{u}^{T} \vec{v}
+$$
+
+Dot products also have a geometric interpretation. It is defined by the euclidian norms of the input vectors and the angle $$\theta$$ between them.
+
+$$
+\vec{u} \cdot \vec{v}
+=
+\lVert \vec{u} \rVert \lVert \vec{v} \rVert
+cos(\theta)
+$$
+
+Visualizations: Under Development
 
 ### Cross Product
 
