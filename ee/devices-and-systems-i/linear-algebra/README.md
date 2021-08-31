@@ -2,7 +2,7 @@
 
 ## Linear
 
-Informally, a linear [transformation](../../../cs/programming/functions.md#transformations) is one that strictly scales and adds inputs.
+Informally, a linear [transformation](../../../cs/programming/functions.md#transformations) is one that strictly scales and adds its inputs.
 
 > Somewhat formally, a linear function $$f : X \rightarrow Y$$, where $$X$$ and $$Y$$ are both [vector spaces](vectors/vector-space.md) \(forward link\), satisfies two properties.
 >

@@ -13,7 +13,7 @@ $$
 $$
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 
@@ -45,7 +45,7 @@ Informally, the norm of a vector is its magnitude.
 
 There are many different norms that all quantify magnitude in slightly different ways.
 
-One such norm is defined by the [inner product](vector-operations.md#inner-product) \(forward link\).
+One class of norms are those defined as the square root of an [inner product](vector-operations.md#inner-product) \(forward link\).
 
 $$
 \lVert \vec{u} \rVert ^{2} = \langle \vec{u}, \vec{u} \rangle
@@ -62,7 +62,7 @@ $$
 $$
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 import math
@@ -111,7 +111,7 @@ $$
 Normalizing a vector is a useful for extracting its direction / orientation \(orientation of data, not `np.shape`\).
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 
@@ -139,7 +139,7 @@ $$
 Since we can negate all of the elements of a vector without any trouble, subtraction is can be reduced to element-wise addition after negating the subtrahend \(second argument\).
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 
@@ -174,7 +174,7 @@ $$
 $$
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 
@@ -223,7 +223,7 @@ $$
 $$
 
 ```python
-#!/usr/bin/python
+# python
 
 import numpy as np
 
@@ -292,7 +292,7 @@ $$
 Cross products are only nonzero in $$\mathbb{R^3}$$ and $$\mathbb{R^7}$$, so we will only discuss the $$\mathbb{R^3}$$ cross product.
 
 ```python
-#!/usr/bin/python                                                               
+# python                                                               
 
 import numpy as np
 
