@@ -163,6 +163,45 @@ Using Taylor Series expansion, we can work towards an explicit formula for the r
 Recall the following three Taylor Series.
 
 $$
-e^{xt} =
+e^{xt} = I + xt + \frac{(xt)^2}{2!} + \frac{(xt)^3}{3!} + \dots
+$$
+
+$$
+sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots
+$$
+
+$$
+cos(x) = 1 - x^2 + \frac{x^4}{4!} - \frac{x^6}{6!} + \dots
+$$
+
+We can reduce our matrix rotation \($$e^{\hat{w}t}$$\) to $$sin$$ and $$cos$$ expressions.
+
+$$
+e^{\hat{w}t} = I + \hat{w}t + \frac{(\hat{w}t)^2}{2!} + \frac{(\hat{w}t)^3}{3!} + \dots
+$$
+
+Note that:
+
+$$
+\hat{w}^2 = ww^T - \lVert w \rVert ^2 I
+$$
+
+$$
+\hat{w}^3 = - \lVert w \rVert ^ 2 \hat{w}
+$$
+
+Then:
+
+$$
+e^{\hat{w}t} = 
+I + 
+\hat{w} (t  - \frac{t^3}{3!} + \frac{t^5}{5!} + \dots) + 
+\hat{w}^2 (t^2 - \frac{t^4}{4!} + \frac{t^6}{6!} + \dots)
+$$
+
+Finally we get the **Rodrigues Formula** for unit $$w$$ \($$\lVert w \rVert = 1$$\):
+
+$$
+e^{\hat{w}t} = I + \hat{w} sin(t) + \hat{w}^2 (1 - cos(t))
 $$
 
