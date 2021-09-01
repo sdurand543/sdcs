@@ -52,9 +52,12 @@
   * [Sorting](cs/data-structures/sorting/README.md)
     * [Comparison Sorts](cs/data-structures/sorting/comparison_sorts.md)
     * [Counting Sorts](cs/data-structures/sorting/counting_sorts.md)
-* [61C Computer Architecture](cs/computer-architecture.md)
 * [169A Software Engineering](cs/software-engineering/README.md)
   * [Software Development Process](cs/software-engineering/software-development-process.md)
+  * [Software Quality](cs/software-engineering/software-quality.md)
+* [70 Discrete Mathematics and Probability Theory](cs/70-discrete-mathematics-and-probability-theory/README.md)
+  * [Boolean Logic](cs/70-discrete-mathematics-and-probability-theory/boolean-logic.md)
+* [61C Computer Architecture](cs/computer-architecture.md)
 
 ## EE
 
@@ -72,9 +75,7 @@
 
 ## EECS
 
-* [106A Intro to Robotics](eecs/untitled.md)
-
-## Concepts
-
-* [Boolean Logic](concepts/boolean-logic.md)
+* [106A Intro to Robotics](eecs/untitled/README.md)
+  * [Rigid Motion](eecs/untitled/rigid-motion/README.md)
+    * [Rigid Transformations](eecs/untitled/rigid-motion/rigid-transformations.md)
 

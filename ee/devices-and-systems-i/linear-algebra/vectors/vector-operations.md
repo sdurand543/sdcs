@@ -45,7 +45,7 @@ Informally, the norm of a vector is its magnitude.
 
 There are many different norms that all quantify magnitude in slightly different ways.
 
-One class of norms are those defined as the square root of an [inner product](vector-operations.md#inner-product) \(forward link\).
+One class of norms are those defined as the square root of the [inner product](vector-operations.md#inner-product) \(forward link\).
 
 $$
 \lVert \vec{u} \rVert ^{2} = \langle \vec{u}, \vec{u} \rangle
@@ -210,7 +210,7 @@ Inner products are denoted using the following notation, $$\langle \vec{u}, \vec
 
 > @source [Wikipedia](https://en.wikipedia.org/wiki/Inner_product_space)
 
-In the remainder of the Devices and Systems I section I will use the term inner product and dot product interchangeably.
+In the remainder of the Devices and Systems section I will use the terms inner product and dot product interchangeably.
 
 ### Euclidian Inner Product / Dot Product / Scalar Product
 
