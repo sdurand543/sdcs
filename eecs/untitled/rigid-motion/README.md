@@ -11,7 +11,7 @@ In particular, while LA [vectors](../../../ee/devices-and-systems-i/linear-algeb
 A point describes the location of an object. Below is a **trajectory**, a point as a function of $$t$$.
 
 $$
-\vec{p}(t) = \begin{bmatrix} x(t) \\ y(t) \\ z(t) \end{bmatrix}
+p(t) = \begin{bmatrix} x(t) \\ y(t) \\ z(t) \end{bmatrix}
 $$
 
 ### Vector
@@ -19,7 +19,7 @@ $$
 A vector describes the difference / displacement between two points.
 
 $$
-\vec{v} = \vec{p} - \vec{q}
+\vec{v} = p - q
 $$
 
 ### Matrix

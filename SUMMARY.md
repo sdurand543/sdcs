@@ -77,5 +77,9 @@
 
 * [106A Intro to Robotics](eecs/untitled/README.md)
   * [Rigid Motion](eecs/untitled/rigid-motion/README.md)
-    * [Rigid Transformations](eecs/untitled/rigid-motion/rigid-transformations.md)
+    * [Rigid Transformations](eecs/untitled/rigid-motion/rigid-transformations/README.md)
+      * [Hat Map](eecs/untitled/rigid-motion/rigid-transformations/hat-map.md)
+      * [Groups](eecs/untitled/rigid-motion/rigid-transformations/groups.md)
+      * [Rotation Matrices](eecs/untitled/rigid-motion/rigid-transformations/rotation-matrices.md)
+      * [Rodrigues Formula](eecs/untitled/rigid-motion/rigid-transformations/rodrigues-formula.md)
 
