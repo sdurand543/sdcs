@@ -37,6 +37,21 @@ T transformation(T input)
 }
 ```
 
+## Terminology
+
+### Onto
+
+A function $$f : X \rightarrow Y$$ is considered **onto** iff:
+
+$$
+\forall y \in Y, \ 
+\exists \tilde{x} \in X \ \ s.t. \ \ f(\tilde{x}) = y
+$$
+
+&lt;-- include graphic here
+
+Under Development
+
 ## Programming
 
 In programming, functions are defined by their 'callability' \(ability to be executed\), rather than deterministic mapping. Languages which do not support state mutation are known as 'purely functional', and force the mathematical / mapping definition of functions.

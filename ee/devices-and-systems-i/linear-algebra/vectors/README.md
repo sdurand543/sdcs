@@ -40,12 +40,12 @@ Since all vectors and matrices contain logical state for their coordinate space,
 {% tabs %}
 {% tab title="Vector" %}
 $$
-\vec{u} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
+\vec{u} = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}
 $$
 {% endtab %}
 
 {% tab title="LaTeX" %}
-\vec{u} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
+\vec{u} = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}
 {% endtab %}
 
 {% tab title="numpy" %}
@@ -65,7 +65,7 @@ $$
 {% endtab %}
 
 {% tab title="LaTeX" %}
-\vec{v} = \begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}
+\vec{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
 {% endtab %}
 
 {% tab title="numpy" %}
@@ -75,5 +75,5 @@ v = np.array([[1], [2], [3]])
 {% endtab %}
 {% endtabs %}
 
-There is a common mathematical markup language known as LaTeX. While it may seem somewhat tedious to write out vectors in this, it is standard and produces polished results. In the above examples, I provided you with both so you could appreciate its design.
+There is a common mathematical markup language known as \(La\)TeX. While it may seem somewhat tedious to write out vectors in this, it is standard and produces polished results. In the above examples, I provided you with both so you could appreciate its design.
 
