@@ -79,3 +79,5 @@ if (select == 2'b00) out = in0;
 Nested `if` structure leads to 'priority logic'. The `case` keyword avoids this.
 {% endhint %}
 
+Go over the difference between = and &lt;=.
+
