@@ -17,7 +17,7 @@
     * [Git Design](tools/basic-tools/version_control/git-design.md)
     * [Git Reference](tools/basic-tools/version_control/git-reference.md)
 * [Verilog](tools/verilog/README.md)
-  * [Verilog HDL](tools/verilog/verilog-hdl.md)
+  * [Verilog Modules](tools/verilog/verilog-modules.md)
   * [Verilog Structural](tools/verilog/verilog-structural.md)
   * [Verilog Behavioral](tools/verilog/verilog-behavioral.md)
   * [Verilog Operators](tools/verilog/verilog-operators.md)
@@ -90,5 +90,6 @@
         * [Rotation Matrices](eecs/untitled/rigid-motion/rigid-transformations/rotations/rotation-matrices.md)
         * [Rodrigues Formula](eecs/untitled/rigid-motion/rigid-transformations/rotations/rodrigues-formula.md)
         * [Other Rotation Formulations](eecs/untitled/rigid-motion/rigid-transformations/rotations/other-rotation-formulations.md)
-      * [Homogeneous Coordinates](eecs/untitled/rigid-motion/rigid-transformations/homogeneous-coordinates.md)
+      * [Homogeneous Coordinates](eecs/untitled/rigid-motion/rigid-transformations/homogeneous-coordinates/README.md)
+        * [Twist Space](eecs/untitled/rigid-motion/rigid-transformations/homogeneous-coordinates/twist-space.md)
 

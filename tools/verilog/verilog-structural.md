@@ -2,9 +2,11 @@
 
 ## Netlist
 
-a netlist is a description of the connectivity of an electrical circuit
+A netlist is a description of the connectivity of an electrical circuit. Netlists are critical components of EDIFs \(Electronic Design Interchange Format\).
 
-EDIF \(Electronic Design Interchange Format\)
+## Structural Verilog
+
+Structural Verilog specifies the connectivity of components, rather than the behavior of the circuit itself. Often you will use Structural Verilog to combine components which were designed using Behavioral Verilog.
 
 ```c
 module xor_gate (out, a, b);
@@ -12,7 +14,6 @@ module xor_gate (out, a, b);
     output out;
     wire aBar, bBar, t1, t2;
     
-    // body (contains instances of lower)
     not invA (aBar, a);
     not invB (bBar, b);
     and and1 (t1, a, bBar);
@@ -22,12 +23,12 @@ module xor_gate (out, a, b);
 endmodule
 ```
 
-Instantiated gates are not "executed". They are always active. A description of hardware state.
+### Structural 'Existence'
 
-^ this is a useless example because xor gate made from other primitives.
+Instantiated modules are not "executed". They are always active. They describe hardware state. In the above example, the output `out` is always assigned the value of `a ^ b`, because our `xor_gate` module describes a hardware component that sets out to `a ^ b`.
 
 {% hint style="info" %}
-\*\* undeclared variables are assumed to be wires. don't use undeclared variables.
+Undeclared variables are assumed to be wires. It is generally seen as bad practice to use undeclared variables.
 {% endhint %}
 
 ```c
@@ -42,11 +43,9 @@ module mux2 (in0, in1, select, out);
     or (out, w0, w1);
 ```
 
-{% hint style="info" %}
-builtins don't need instance names \(they would then share the 'master name', but non-builtins definitely do.
-{% endhint %}
+Builtins don't need instance names but non-builtins do.
 
-You can specify names explicitly.
+You can also specify names explicitly.
 
 ```c
 module mux4 (in0, in1, in2, in3, select, out);
@@ -62,9 +61,5 @@ module mux4 (in0, in1, in2, in3, select, out);
 endmodule
 ```
 
-{% hint style="info" %}
-pick little-endian
-{% endhint %}
-
-1-off indices and mixed endianness is biggest cause of bugs.
+It is good practice to pick a specific endianness for all buses. We will use little-endian.
 
